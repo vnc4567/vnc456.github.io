@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "CraftmanshipBlog",
   "resources": {
-    "hash": "sha256-AwCmMFfykh0nSRKW4yJcESMV78MvrsxqnydrWDFAtf4=",
+    "hash": "sha256-wVQ39SVv6oK901PuIlrfxOxi8vUyWCBRyQybBawcbTE=",
     "jsModuleNative": {
       "dotnet.native.8.0.1.ahpp78valh.js": "sha256-SGOlISx+3G4kkvpC9Uq3qoPGsnjxGmW61QBev0lyI5U="
     },
@@ -17,7 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "CraftmanshipBlog.wasm": "sha256-ZV0yqq6iX3q0XlD1S7zlVMRqtXrv5+C6OSF6u4IKFu4=",
+      "CraftmanshipBlog.wasm": "sha256-R5Ih+L93tHO25XAv0SHPLSCp5AnOoyoGr7iedvwZWx8=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-VS0AiSyRt/aiOantX+eu1XIT896oY37PcKt0QzpEb1A=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-ivj7kxN8rrhTm1UV0H7dhsOewu6rhATFU2ZAG/YKLvA=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-Ws5szf6fWPAXna+XyWsAhavx+WDFcA/91DQ7iPRPCMs=",
