@@ -131,7 +131,8 @@
 }
 
 .about {
-    background: rgba(26,26,39,1);
+    background-image: url("cover.jpg");
+    background-size: cover;
 }
 
 .about__content {

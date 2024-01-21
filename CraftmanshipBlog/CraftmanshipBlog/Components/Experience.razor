@@ -1,11 +1,11 @@
 ﻿@using CraftmanshipBlog.Models
 @inject IJSRuntime Js;
 
-<div data-aos="@(IsLeft ? "fade-up-right" : "fade-up-left")">
+<div data-aos="@(IsLeft ? "fade-up-right" : "fade-up-left")" class="mt-5">
     <MudCard Outlined="true">
         <MudCardContent>
             <MudText>
-                <span class="enterprise">@ExperienceItem.Enterprise</span><span class="date">@ExperienceItem.Date</span>
+                <span class="enterprise">@ExperienceItem.Enterprise</span> | <span class="date">@ExperienceItem.Date</span>
             </MudText>
             <MudText Typo="Typo.body2">
                 @ExperienceItem.Poste
