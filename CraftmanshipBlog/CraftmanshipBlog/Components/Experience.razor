@@ -1,0 +1,42 @@
+﻿@using CraftmanshipBlog.Models
+@inject IJSRuntime Js;
+
+<div data-aos="@(IsLeft ? "fade-up-right" : "fade-up-left")">
+    <MudCard Outlined="true">
+        <MudCardContent>
+            <MudText>
+                <span class="enterprise">@ExperienceItem.Enterprise</span><span class="date">@ExperienceItem.Date</span>
+            </MudText>
+            <MudText Typo="Typo.body2">
+                @ExperienceItem.Poste
+                <MudList Clickable="true" >
+                    @foreach (KeyValuePair<string, List<string>> item in ExperienceItem.Items)
+                    {
+                        <MudListItem Icon="@Icons.Material.Filled.Label" Text="@item.Key" InitiallyExpanded="false">
+                            <NestedList>
+                                @foreach (string value in item.Value)
+                                {
+                                    <MudListItem Icon="@Icons.Material.Outlined.Label">
+                                        @value
+                                    </MudListItem>
+                                }
+                            </NestedList>
+                        </MudListItem>
+                    }
+                </MudList>
+            </MudText>
+        </MudCardContent>
+    </MudCard>
+</div>
+
+@code {
+
+    [Parameter] public bool IsLeft { get; set; } = true;
+    [Parameter] public ExperienceItem ExperienceItem { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await Js.InvokeVoidAsync("AOS.init");
+    }
+
+}
